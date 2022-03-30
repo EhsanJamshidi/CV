@@ -1,0 +1,35 @@
+.cv-preview {
+  width: 793.7007874px !important;
+  height: 1122.519685px !important;
+
+  transform: scale(.5) !important;
+
+  @media only screen and (min-width: 600px) {
+    transform: scale(.6) !important;
+  }
+
+  @media only screen and (min-width: 960px) {
+    transform: scale(.7) !important;
+  }
+
+  @media only screen and (min-width: 1264px) {
+    transform: scale(.8) !important;
+  }
+
+  @media only screen and (min-width: 1904px) {
+    transform: scale(.8) !important;
+  }
+}
+
+@media print {
+  .cv-preview {
+    width: 793.7007874px !important;
+    height: 1122.519685px !important;
+    transform: scale(1) !important;
+  }
+
+  .noprint {
+    visibility: hidden;
+    display: none;
+  }
+}
