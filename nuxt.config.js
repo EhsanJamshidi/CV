@@ -7,8 +7,8 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - personal-resume',
-    title: 'personal-resume',
+    titleTemplate: '%s',
+    title: 'Ehsan Jamshidi - Resume',
     htmlAttrs: {
       lang: 'en'
     },

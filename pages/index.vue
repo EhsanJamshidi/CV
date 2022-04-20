@@ -1574,7 +1574,7 @@ export default {
       github: '',
       website: '',
       summary:
-        "In the past five years, I worked as a Freelancer. I learned how to deal with different challenges that give me a lot of experience in how to handle every aspect of websites such as Server, APIs, Database, PWA, SEO, Speed and etc. I've also learned how to create algorithms to use lower resources with high-speed execution.",
+        "In the past eight years, I worked as a Web Developer. I learned how to deal with different challenges that give me a lot of experience in how to handle every aspect of websites such as Server, APIs, Database, PWA, SEO, Speed and etc. I've also learned how to create algorithms to use lower resources with high-speed execution.",
     },
     skills: [
       {
@@ -1876,6 +1876,26 @@ export default {
     },
     projectsAlert: '',
   }),
+  head() {
+    return {
+      title:
+        this.personalDetails.firstName +
+        ' ' +
+        this.personalDetails.lastName +
+        ' - Resume',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content:
+            this.personalDetails.firstName +
+            ' ' +
+            this.personalDetails.lastName +
+            ' - Resume',
+        },
+      ],
+    }
+  },
   created() {},
   methods: {
     downloadPdf() {
